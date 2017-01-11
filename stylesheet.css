@@ -5,183 +5,223 @@
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
-hr {
-    border: 0;
-    border-top: solid 1px #ddd;
-    margin: 6em 0 0 0;
-    padding: 6em 0 0 0;
-}
-*{padding:0;margin:0;box-sizing:border-box}
-.container{width:85%; margin:auto;}
-body{
-  background-color:#f2f2f2;
-  font-family: 'Raleway';
-  }
+/* End Fonts */
+a{color:#fff;text-decoration:none;}
+*{padding:0;margin:0}
+hr{margin:10px; border:1px solid #3d3c33;}
+body{font-family:Raleway;  background: #f06;
+background: linear-gradient(45deg, #f06, yellow);}
 .clear{clear:both;}
-.header{
-background-image:url("http://imgview.info/download/20150816/trey-ratcliff-iceland-landscape-road-2560x1466.jpg");
+.container{width:80%;margin:auto;}
+.header {
+  background-image:url("https://66.media.tumblr.com/9693404a6d6891c8d9837284b430ef94/tumblr_nkc3diCFOi1qag7kzo1_1280.jpg");
+  background-size:cover;
+     background-attachment: fixed;
+  height:600px;
   text-align:center;
   color:#fff;
-  height:500px;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-  background-size:cover;
     overflow:hidden;
 }
-.header .nav {
-  background-color:#3d3c33;
-  box-shadow: 1px 3px 5px #222;
-  border-radius:0 0 13px 13px;
-/*   width:100%; */
-  overflow:hidden;
-  text-align:center;
-   position:fixed; 
-  margin-left:15%;
-}
-.header .nav ul li {
-  list-style-type:none;
-  float:left;
-  padding:20px;
-
-  
-}
-.header .nav ul li:hover{color:#c4c048;cursor:pointer;transition:.3s;}
-
-.header h1{
+.header h1 {
+  padding-top:12%;
+  font-size:760%;
   text-shadow:-2px -3px 1px #333,
               -2px -3px 1px #777;
-  padding-top:100px;
-/*   font-size:100px; */
-    display: block;
-    text-decoration: none;
-    font-weight: 300;
-    line-height: 1em;
-    font-size: 7em;
-     color: #FFF; 
-    letter-spacing: -0.05em;
 }
-.header h1:hover{ text-shadow:2px -5px 1px #333;cursor:pointer;transition:.5s;}
-.header p {
-  font-size:30px;
-  text-shadow:3px 3px 3px #333;
+.header blockquote {
+    font-family:'Ubuntu';
+  font-size:180%;
+  padding-top:1%;
 }
-/* End Header */
-
-/* Start Welcome */
-.welcome{
-  color:#777;
-  text-align:center;
-  height:400px;
-  padding-top:50px;
-  width:100%; 
+.header p{
+  
+  font-family:'Ubuntu';
+  font-size:160%;
+  padding-top:2%;
+  padding-bottom:5.5%;
 }
-.welcome h2 {
-  padding-top:30px;
-  padding-bottom:30px;
-  letter-spacing:2px;
-  color:#3d3c33;
-}
-.welcome p {
-  line-height:2em;
-  letter-spacing:1px;
-}
-.welcome p span{color:black;font-weight:bold}
-/* End Welcome */
-
-/* Start Works */
-.works {
-  text-align:center;
-  color:#777;
-}
-.works .work {
-  display:inline-block;
-  width:30.3333%;
-  padding-left:10px;
-  padding-bottom:7em;
-}
-.works .work h3{
-  padding-bottom:35px;
-  letter-spacing:2px;
-  color:#3d3c33;
-}
-.works .work p{
-  line-height:2em;
-  width:90%;
-}
-.works .work button{
-  margin-top: 1.5em;
-  background-color: #80BA8E;
+.header button {
+  padding:1.2%;
+  width:20%;
+  background-color:transparent;
+  border:2px dotted #fff;
+  border-radius:2px  50px 2px 50px;
   color:#fff;
-  padding: 0.8em 2em;
-  font-weight: 300;
-  border: 2px solid #80BA8E;
-  border-radius: 35px 5px;
-  box-shadow:1px 1px 1px #777 ; /* CSS3 */
+  font-weight:bold;
+  font-size:20px;
+  transition: all 0.5s ease;
+  outline:0;
+}
+.header button:hover{
+  border-radius:50px  2px 50px 2px;
+/*     transition: all 0.5s ease; */
+  cursor:pointer;
+/*   all .5s ease-in-out */
+/*     color:#3d3c33; */
 
 }
-.works .work button:hover{  background-color: #fff;
-  color:#80BA8E; cursor:pointer; transition:.5s;}
-/* End Works */
+/* end header */
 
-/* Satrt Album */
-.albums {
-  height:1000px;
-  background-color:#fff;
-/*   text-align:center; */
-   overflow: hidden;
+/* Start Section */
+.section{
+  text-align:center;
+/*   background-color:#f2f2f2; */
+/*   background: #f06;
+background: linear-gradient(45deg, #f06, yellow); */
+  color:#777;
+    padding-bottom:5%;
+}
+.section h3 {
+  text-align:center;
+  font-family:'Ubuntu';
+  font-size:160%;
+  padding-top:5%;
+  padding-bottom:3%;
+  color:#3d3c33;
+}
+
+.section .W {
+  display:inline-block;
+  width:45%;
+/*   height:95%; */
+  padding: 30px 20px;
+  padding-bottom:4em;
+  border-radius:5px 5px 5px 5px;
+  box-shadow:1px 1px 1px #444;
+    transition: all 0.5s ease;
+}
+.section .W:hover{
+  border-radius:20px 20px 20px 20px;
+   background-color:#111;
+  color:#fff;
+    cursor:pointer;
+    transition:.5s;
+}
+.section .developer{
+    background-color:#222;
   
 }
-.albums .album {
-  display:inline-block;
-  color:#777;
-  width:50%;
-  float: left;
-/*   padding-left:10px; */
-/*   padding-bottom:7em; */
+.section .designer{
+    background-color:#222;
+/*   background-image:url(""); */
 }
-.albums .album img {
-/*   width:95%; */
-  border-radius: 210px 15px;
-  padding-top:30px;
-  width: 540px;
-  height:204px;
-/*     box-shadow: 0px 1px  5px #222; */
-/*   580x204 */
+.section .W h2{
+  text-align:center;
+  font-family:'Ubuntu';
+  font-size:160%;
+  padding-top:5%;
+  padding-bottom:5%;
+  color:#999;
+  
 }
-.albums .album img:hover{box-shadow: -1px 2px  10px #c4c048;transition:.5s;}
-.albums .album h2 {
-   text-align:center; 
-  padding-top:20px;
+.section .W p {
+  line-height:1.7;
+  letter-spacing:1px;
   padding-bottom:40px;
-  width:80%;
-  color:#3d3c33;
+  transition: all 0.5s ease;
+}
+.section .W p:hover{
+  transition:.5s;
+  color:#444;
 
 }
-.albums .album p{
-  width:85%;
-  line-height:1.7em;
+.section .W button {
+    transition: all 0.5s ease;
+    letter-spacing:1px;
+   padding:15px;
+  width:50%;
+  background-color:transparent;
+  border:2px dotted #fff;
+  border-radius:2px  50px 2px 50px;
+  color:#fff;
+font-weight:bold;
+  font-size:20px;
+   font-family: 'Ubuntu';
+   outline:0;
+}
+.section .W button:hover{
+  border-radius:50px  2px 50px 2px;
+  transition:.5s;
+  cursor:pointer;
+  color:#3d3c33;
+   
+}
+/* End Section */
+
+/* Start top-students */
+.top-students{
+  overflow:hidden;
   text-align:center;
+  padding-top:40px;
+  padding-bottom:50px;
+}
+.top-students h1 {
+  padding-bottom:55px;
+  letter-spacing:1.8;
+  line-height:1.7;
+}
+.top-students .student{
+  /*float: left;*/
+  display:inline-block;
+  width:30.333333%;
+  padding:10px;
+  padding-bottom:40px;
+    transition: all 0.7s ease;
+}
+.top-students .student img {
+   border-radius: 5px 20px 5px;
+  background: #3d3c33;
+  width:99%;
+  min-height:450px;
+  max-height:450px;
+  padding-bottom:10px;
+/*   height:10%; */
+}
+
+.top-students .student:hover{
+   border-radius: 5px 20px 1px;
+  /*border-buttom:20px;*/
+  color:#fff;
+  background-color: #222;
+  background-position: bottom 10px;
+  cursor:pointer;
+  transition:.5s;
+/*   border:2px dotted #fff; */
+}
+.top-students .student h3{
+  padding-bottom:9px;
+  padding-top:9px;
+}
+.top-students .student p{ line-height:1.8;}
+.top-students .student p:hover{
+color:#fff;
+      transition:.5s;
+/*      background-color:#111; */
+}
+/* End top-students */
+
+
+/* Start About  */
+.about{
+  padding-top:40px;
+  background-image:url("http://imgview.info/download/20150529/wood-background-pictures-1920x1200.jpg");
+  text-align:center;
+  color:#fff;
+     background-attachment: fixed;
+/*   overflow:hidden; */
+}
+.about h1{
+  font-size:360%;
+  padding-top:10px;
   padding-bottom:30px;
 }
-/* End Albout */
-
-/* Start  About */
-.about{
-  height:250px;
-  background-image:url("http://www.zastavki.com/pictures/originals/2013/Creative_Wallpaper__039655_.jpg");
-  
-}
-.about blockquote {
-  text-align:center;
-  margin: 0;
-  padding: 1em 4em;
-  line-height: 1.5em;
-  font-size: 1.8em;
-  color:#ddd;
-  padding-top:90px;
+.about p{
+  font-size:120%;
+   line-height:1.7;
+  letter-spacing:1px;
+    padding-bottom:60px;
 }
 /* End About */
-
 /* Start Footer */
 .footer{
   overflow:hidden;
@@ -192,6 +232,8 @@ background-image:url("http://imgview.info/download/20150816/trey-ratcliff-icelan
   line-height: 1.5em;
   font-size: 1.8em;
   color:#333;
+    transition: all 0.5s ease;
 }
-.footer p:hover{color:#999;cursor:pointer;transition:.5s}
-/* End Footer */
+.footer .l {text-align:left;width:60%;}
+ul li:hover{color:#999;cursor:pointer;  transition: all 0.5s ease;}
+.footer p:hover{color:#999;cursor:pointer;  transition: all 0.5s ease;}
