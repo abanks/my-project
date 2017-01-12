@@ -1,239 +1,84 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
-@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
-/* End Fonts */
-a{color:#fff;text-decoration:none;}
-*{padding:0;margin:0}
-hr{margin:10px; border:1px solid #3d3c33;}
-body{font-family:Raleway;  background: #f06;
-background: linear-gradient(45deg, #f06, yellow);}
-.clear{clear:both;}
-.container{width:80%;margin:auto;}
-.header {
-  background-image:url("https://66.media.tumblr.com/9693404a6d6891c8d9837284b430ef94/tumblr_nkc3diCFOi1qag7kzo1_1280.jpg");
-  background-size:cover;
-     background-attachment: fixed;
-  height:600px;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  background-color: #F2F3F4; 
+}
+
+#wrapper {
   text-align:center;
-  color:#fff;
-    overflow:hidden;
+  font-family: 'Lato', sans-serif;
+  text-transform:uppercase;
 }
-.header h1 {
-  padding-top:12%;
-  font-size:760%;
-  text-shadow:-2px -3px 1px #333,
-              -2px -3px 1px #777;
-}
-.header blockquote {
-    font-family:'Ubuntu';
-  font-size:180%;
-  padding-top:1%;
-}
-.header p{
-  
-  font-family:'Ubuntu';
-  font-size:160%;
-  padding-top:2%;
-  padding-bottom:5.5%;
-}
-.header button {
-  padding:1.2%;
-  width:20%;
-  background-color:transparent;
-  border:2px dotted #fff;
-  border-radius:2px  50px 2px 50px;
-  color:#fff;
-  font-weight:bold;
-  font-size:20px;
-  transition: all 0.5s ease;
-  outline:0;
-}
-.header button:hover{
-  border-radius:50px  2px 50px 2px;
-/*     transition: all 0.5s ease; */
-  cursor:pointer;
-/*   all .5s ease-in-out */
-/*     color:#3d3c33; */
 
+h1 {
+  padding-top:30px;
+  font-size:25px;
+  letter-spacing:15px;
+  color: #3AB09E;
 }
-/* end header */
 
-/* Start Section */
-.section{
+#toolbar {  
+  width:100%;
+  max-width:670px;
+  min-width:550px;
+  margin: 70px auto;
+}
+
+.button {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background-color:#3AB09E;
+  color:#ffffff;
   text-align:center;
-/*   background-color:#f2f2f2; */
-/*   background: #f06;
-background: linear-gradient(45deg, #f06, yellow); */
-  color:#777;
-    padding-bottom:5%;
-}
-.section h3 {
-  text-align:center;
-  font-family:'Ubuntu';
-  font-size:160%;
-  padding-top:5%;
-  padding-bottom:3%;
-  color:#3d3c33;
+  font-size:3.5em;
+  position:relative;
+  left:50%;
+  margin-left:-35px;
+  z-index:1;
 }
 
-.section .W {
-  display:inline-block;
-  width:45%;
-/*   height:95%; */
-  padding: 30px 20px;
-  padding-bottom:4em;
-  border-radius:5px 5px 5px 5px;
-  box-shadow:1px 1px 1px #444;
-    transition: all 0.5s ease;
+.button,.icons{
+  -webkit-transition: -webkit-all 1s cubic-bezier(.87,-.41,.19,1.44);
+          transition:  all 1s cubic-bezier(.87,-.41,.19,1.44);
 }
-.section .W:hover{
-  border-radius:20px 20px 20px 20px;
-   background-color:#111;
-  color:#fff;
-    cursor:pointer;
-    transition:.5s;
-}
-.section .developer{
-    background-color:#222;
-  
-}
-.section .designer{
-    background-color:#222;
-/*   background-image:url(""); */
-}
-.section .W h2{
-  text-align:center;
-  font-family:'Ubuntu';
-  font-size:160%;
-  padding-top:5%;
-  padding-bottom:5%;
-  color:#999;
-  
-}
-.section .W p {
-  line-height:1.7;
-  letter-spacing:1px;
-  padding-bottom:40px;
-  transition: all 0.5s ease;
-}
-.section .W p:hover{
-  transition:.5s;
-  color:#444;
 
+.button:after {
+  content:"+";
 }
-.section .W button {
-    transition: all 0.5s ease;
-    letter-spacing:1px;
-   padding:15px;
-  width:50%;
-  background-color:transparent;
-  border:2px dotted #fff;
-  border-radius:2px  50px 2px 50px;
-  color:#fff;
-font-weight:bold;
-  font-size:20px;
-   font-family: 'Ubuntu';
-   outline:0;
-}
-.section .W button:hover{
-  border-radius:50px  2px 50px 2px;
-  transition:.5s;
-  cursor:pointer;
-  color:#3d3c33;
-   
-}
-/* End Section */
 
-/* Start top-students */
-.top-students{
+.button.active {
+-webkit-transform: rotate(45deg);
+ transform: rotate(45deg);
+  left:60px;
+}
+
+
+.icons {
+  width:0%;
   overflow:hidden;
-  text-align:center;
-  padding-top:40px;
-  padding-bottom:50px;
-}
-.top-students h1 {
-  padding-bottom:55px;
-  letter-spacing:1.8;
-  line-height:1.7;
-}
-.top-students .student{
-  /*float: left;*/
-  display:inline-block;
-  width:30.333333%;
-  padding:10px;
-  padding-bottom:40px;
-    transition: all 0.7s ease;
-}
-.top-students .student img {
-   border-radius: 5px 20px 5px;
-  background: #3d3c33;
-  width:99%;
-  min-height:450px;
-  max-height:450px;
-  padding-bottom:10px;
-/*   height:10%; */
+  height:36px;
+  list-style:none;
+  padding:16px 10px 10px 50px;
+  background-color:#ffffff;
+  box-shadow: 1px 1px 1px 1px #DCDCDC;
+  margin:-68px 0 0 45%;
+  border-radius: 2em;
 }
 
-.top-students .student:hover{
-   border-radius: 5px 20px 1px;
-  /*border-buttom:20px;*/
-  color:#fff;
-  background-color: #222;
-  background-position: bottom 10px;
-  cursor:pointer;
-  transition:.5s;
-/*   border:2px dotted #fff; */
-}
-.top-students .student h3{
-  padding-bottom:9px;
-  padding-top:9px;
-}
-.top-students .student p{ line-height:1.8;}
-.top-students .student p:hover{
-color:#fff;
-      transition:.5s;
-/*      background-color:#111; */
-}
-/* End top-students */
-
-
-/* Start About  */
-.about{
-  padding-top:40px;
-  background-image:url("http://imgview.info/download/20150529/wood-background-pictures-1920x1200.jpg");
-  text-align:center;
-  color:#fff;
-     background-attachment: fixed;
-/*   overflow:hidden; */
-}
-.about h1{
-  font-size:360%;
-  padding-top:10px;
-  padding-bottom:30px;
-}
-.about p{
-  font-size:120%;
-   line-height:1.7;
-  letter-spacing:1px;
-    padding-bottom:60px;
-}
-/* End About */
-/* Start Footer */
-.footer{
+.icons.open {
+  width:80%;
+  margin:-68px 0 0 5%;
   overflow:hidden;
-  background-color:black;
-  color:#fff;
-  text-align:center;
-  padding: 1em 4em;
-  line-height: 1.5em;
-  font-size: 1.8em;
-  color:#333;
-    transition: all 0.5s ease;
 }
-.footer .l {text-align:left;width:60%;}
-ul li:hover{color:#999;cursor:pointer;  transition: all 0.5s ease;}
-.footer p:hover{color:#999;cursor:pointer;  transition: all 0.5s ease;}
+
+.icons li {
+  display: none;
+  width:10%;
+  color:#3AB09E;
+}
+
+.icons.open li {
+  width:16%;
+  display: inline-block;
+}
