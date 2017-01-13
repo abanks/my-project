@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-  background-color: #F2F3F4; 
+  background-color: #bc8f8f; 
 }
 
 #wrapper {
@@ -14,7 +14,7 @@ h1 {
   padding-top:30px;
   font-size:25px;
   letter-spacing:15px;
-  color: #3AB09E;
+  color: #fffff0	;
 }
 
 #toolbar {  
@@ -28,7 +28,7 @@ h1 {
   width:70px;
   height:70px;
   border-radius:50%;
-  background-color:#3AB09E;
+  background-color:#bebebe;
   color:#ffffff;
   text-align:center;
   font-size:3.5em;
@@ -75,7 +75,7 @@ h1 {
 .icons li {
   display: none;
   width:10%;
-  color:#3AB09E;
+  color:#bebebe;
 }
 
 .icons.open li {
