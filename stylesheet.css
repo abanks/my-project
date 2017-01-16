@@ -1,84 +1,105 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+html {
+  font-size: 10pt;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
 body {
-  background-color: #bc8f8f; 
+  margin: 0;
+  background: #eee;
 }
-
-#wrapper {
-  text-align:center;
-  font-family: 'Lato', sans-serif;
-  text-transform:uppercase;
+section {
+  height: 100vh;
+  background: coral;
 }
-
-h1 {
-  padding-top:30px;
-  font-size:25px;
-  letter-spacing:15px;
-  color: #fffff0	;
+section span {
+  margin: 0;
+  font-size: 400%;
+  text-align: center;
+  line-height: 1;
+  padding-top: calc(50vh - 20pt);
+  display: block;
+  font-weight: 700;
 }
-
-#toolbar {  
-  width:100%;
-  max-width:670px;
-  min-width:550px;
-  margin: 70px auto;
+header {
+  width: 100%;
+  padding: 1em;
+  font-size: 140%;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  transition: opacity .2s ease-in-out;
+  text-align: center;
 }
-
-.button {
-  width:70px;
-  height:70px;
-  border-radius:50%;
-  background-color:#bebebe;
-  color:#ffffff;
-  text-align:center;
-  font-size:3.5em;
-  position:relative;
-  left:50%;
-  margin-left:-35px;
-  z-index:1;
+header h1 {
+  font-weight: 600;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
 }
-
-.button,.icons{
-  -webkit-transition: -webkit-all 1s cubic-bezier(.87,-.41,.19,1.44);
-          transition:  all 1s cubic-bezier(.87,-.41,.19,1.44);
-}
-
-.button:after {
-  content:"+";
-}
-
-.button.active {
--webkit-transform: rotate(45deg);
- transform: rotate(45deg);
-  left:60px;
-}
-
-
-.icons {
-  width:0%;
-  overflow:hidden;
-  height:36px;
-  list-style:none;
-  padding:16px 10px 10px 50px;
-  background-color:#ffffff;
-  box-shadow: 1px 1px 1px 1px #DCDCDC;
-  margin:-68px 0 0 45%;
-  border-radius: 2em;
-}
-
-.icons.open {
-  width:80%;
-  margin:-68px 0 0 5%;
-  overflow:hidden;
-}
-
-.icons li {
-  display: none;
-  width:10%;
-  color:#bebebe;
-}
-
-.icons.open li {
-  width:16%;
+nav a {
   display: inline-block;
+  outline: none;
+  text-decoration: none;
+  opacity: .7;
+  padding: 0 .5em;
+  color: black;
+  transition: opacity .2s ease-in-out;
+}
+nav a:hover,
+nav a:focus {
+  opacity: 1;
+}
+article {
+  margin: 5em auto 0;
+  padding: 1em;
+  font-size: 140%;
+  max-width: 800px;
+  background: white;
+  box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+}
+article p {
+  margin: 0;
+  color: #333;
+}
+article p + p {
+  margin-top: .7em;
+}
+@media (min-width: 500px) {
+  header {
+    text-align: left;
+  }
+  nav {
+    float: right;
+  }
+  article {
+    margin: 3.5em auto 0;
+    padding: 2em;
+  }
+}
+@media (min-width: 800px) {
+  article {
+    margin: 3.5em auto;
+  }
+}
+
+/* And here's the magic! EQCSS.js required */
+@element 'html, body' and (min-scroll-y: 100vh) {
+  header {
+    position: fixed;
+    top: 0;
+    background: white;
+    box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+  }
 }
