@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
@@ -24,7 +25,7 @@ h1 {
   margin: 70px auto;
 }
 
-button {
+.button {
   width:70px;
   height:70px;
   border-radius:50%;
@@ -38,23 +39,23 @@ button {
   z-index:1;
 }
 
-button,icons{
+.button,.icons{
   -webkit-transition: -webkit-all 1s cubic-bezier(.87,-.41,.19,1.44);
           transition:  all 1s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-button:after {
+.button:after {
   content:"+";
 }
 
-button_active {
+.button.active {
 -webkit-transform: rotate(45deg);
  transform: rotate(45deg);
   left:60px;
 }
 
 
-icons {
+.icons {
   width:0%;
   overflow:hidden;
   height:36px;
@@ -66,19 +67,19 @@ icons {
   border-radius: 2em;
 }
 
-icons_open {
+.icons.open {
   width:80%;
   margin:-68px 0 0 5%;
   overflow:hidden;
 }
 
-icons li {
+.icons li {
   display: none;
   width:10%;
   color:#bebebe;
 }
 
-icons_open li {
+.icons.open li {
   width:16%;
   display: inline-block;
 }
