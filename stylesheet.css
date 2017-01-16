@@ -1,147 +1,84 @@
-/* ------------------- */
-/* TEMPLATE        -- */
-/* ----------------- */
-
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700,900,300);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-
-* { box-sizing: border-box; }
-
-html { height: 100%; }
-
-body { 
-	height: 100%;
-	background-color: #333; 
-	color: whitesmoke; 
-	font-size: 1rem; 
-	font-family: 'Inconsolata';
-	overflow-x: hidden;
-} 
-
-p { font-size: 1em; margin-bottom: 1em; margin-top: 0; }
-a { color: dodgerblue; text-decoration: none; border-bottom: 1px dotted; }
-a:hover { color: tomato; }
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-/* ------------------- */
-/* PEN STYLES      -- */
-/* ----------------- */
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-	position: relative;
-	display: flex;
+  background-color: #bc8f8f; 
 }
 
-nav {
-	position: relative;
-	flex: 0 0 auto;
-	background-color: #222;
-	z-index: 9999;
+#wrapper {
+  text-align:center;
+  font-family: 'Lato', sans-serif;
+  text-transform:uppercase;
 }
 
-nav > .menu {
-	width: 0;
-	overflow: hidden;
-	transition: all 0.8s ease;
+h1 {
+  padding-top:30px;
+  font-size:25px;
+  letter-spacing:15px;
+  color: #fffff0	;
 }
 
-nav > .menu.open {
-	width: 60vw;
+#toolbar {  
+  width:100%;
+  max-width:670px;
+  min-width:550px;
+  margin: 70px auto;
 }
 
-nav > .menu:not(.open) {
-	height: 0;
+button {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background-color:#bebebe;
+  color:#ffffff;
+  text-align:center;
+  font-size:3.5em;
+  position:relative;
+  left:50%;
+  margin-left:-35px;
+  z-index:1;
 }
 
-menu li a {
-	display: block;
-	margin: 0 1em;
-	line-height: 1.5em;
-	padding: 1em;
+button,icons{
+  -webkit-transition: -webkit-all 1s cubic-bezier(.87,-.41,.19,1.44);
+          transition:  all 1s cubic-bezier(.87,-.41,.19,1.44);
 }
 
-site-overlay {
-	display: none;
-	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+button:after {
+  content:"+";
 }
 
-site-wrap {
-	flex: 1 0 auto;
-	width: 100vw;
-	padding: 20px;
+button_active {
+-webkit-transform: rotate(45deg);
+ transform: rotate(45deg);
+  left:60px;
 }
 
-header {
-	display: flex;
-	padding-bottom: 1em;
-	border-bottom: 1px solid tomato;
+
+icons {
+  width:0%;
+  overflow:hidden;
+  height:36px;
+  list-style:none;
+  padding:16px 10px 10px 50px;
+  background-color:#ffffff;
+  box-shadow: 1px 1px 1px 1px #DCDCDC;
+  margin:-68px 0 0 45%;
+  border-radius: 2em;
 }
 
-toggle {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex: 0 1 50%;
-	padding: 20px;
-	text-align: center;
-	background-color: #111;
-	cursor: pointer;
-	transition: all 0.25s ease;
-} 
-	toggle:hover {
-		background-color: tomato;
-	}
-
-toggle:not(:last-of-type) {
-	border-right: 1px solid tomato;
+icons_open {
+  width:80%;
+  margin:-68px 0 0 5%;
+  overflow:hidden;
 }
 
-menu_menu_full {
-	display: none;
+icons li {
+  display: none;
+  width:10%;
+  color:#bebebe;
 }
 
-@media (min-width: 960px) {
-	
-	toggle:not(:last-child) {
-		border-right: 1px solid tomato;
-		max-height: 3.5em;
-	}
-	
-	toggle_toggle_collapse {
-		flex: 0 0 auto;
-		padding-right: 50px;
-	}
-	
-	toggle_toggle_collapse:after {
-		content: '\f0c9';
-		font-family: "FontAwesome";
-		position: absolute;
-		right: 1em;
-		top: 50%;
-		transform: translateY(-50%);
-		display: block;
-	}
-	
-toggle_menu_main {
-		display: none;
-	}
-	
-	nav {
-		flex: 1 1 auto;
-	}
-	
-menu_menu_full {
-		display: flex;
-		flex-wrap: wrap;
-	}
+icons_open li {
+  width:16%;
+  display: inline-block;
 }
