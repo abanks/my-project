@@ -201,7 +201,7 @@ h1.hero:after {
   content: "";
   width: 50px;
   position: relative;
-  border-bottom: 1px solid #FFFF99; /*
+  border-bottom: 1px solid #FFFF99; 
   display: block;
   text-align: center;
   margin: auto;
