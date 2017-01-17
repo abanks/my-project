@@ -68,7 +68,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #FFFF99; 
+  background: red; /*block of color at the top left hand side */
   float: left;
   height: 40px;
   width: 170px;
@@ -134,21 +134,21 @@ h1.hero:after {
   content: "";
   width: 300px;
   position: relative;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #aaa; /* mid grey section*/
   text-align: center;
   margin: auto;
   margin-top: 15px;
 }
 
 .call {
-  color: white;
+  color: white; /*white letters*/
   display: block;
   margin-bottom: 20px;
 }
 
 .call span {
   display: inline;
-  border: 1px solid white;
+  border: 1px solid white; /*white boarder*/
   padding: 8px 13px;
   font-size: 20px;
   transition: background 0.15s linear;
@@ -201,7 +201,7 @@ h1.hero:after {
   content: "";
   width: 50px;
   position: relative;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #FFFF99; /*
   display: block;
   text-align: center;
   margin: auto;
