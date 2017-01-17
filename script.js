@@ -1,5 +1,5 @@
-$( "button" ).click(function() {
-  $(.this).toggleClass( "active" );
-  $("icons").toggleClass( "open" );
+$( ".button" ).click(function() {
+  $(this).toggleClass( "active" );
+  $(".icons").toggleClass( "open" );
  
 });
