@@ -22,7 +22,7 @@ body {
   position: relative;
   width: 1170px;
   margin: 0 auto;
-  color: #444; /* Dark grey sections */
+  color: #444;
   font-size: 14px;
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
@@ -34,7 +34,7 @@ body {
 }
 
 .section.bg {
-  background: #f7f7f7; /* light grey sections */
+  background: #f7f7f7;
 }
 /*
   Header
@@ -68,7 +68,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: red; /*block of color at the top left hand side */
+  background: red;
   float: left;
   height: 40px;
   width: 170px;
@@ -93,7 +93,7 @@ ul.nav li a {
 }
 
 ul.nav li:hover a {
-  color: red; /* hover color of projects, Da Vinci Communications etc. */
+  color: red;
 }
 
 ul.nav li a {
@@ -107,7 +107,7 @@ ul.nav li a {
 
 .section .slider,
 .section .footer {
-  background: #333; /* any dark grey section */
+  background: #333;
 }
 
 .slidercontent {
@@ -134,21 +134,21 @@ h1.hero:after {
   content: "";
   width: 300px;
   position: relative;
-  border-bottom: 1px solid #aaa; /* mid grey section*/
+  border-bottom: 1px solid #aaa;
   text-align: center;
   margin: auto;
   margin-top: 15px;
 }
 
 .call {
-  color: white; /*white letters*/
+  color: white;
   display: block;
   margin-bottom: 20px;
 }
 
 .call span {
   display: inline;
-  border: 1px solid white; /*white boarder*/
+  border: 1px solid white;
   padding: 8px 13px;
   font-size: 20px;
   transition: background 0.15s linear;
@@ -201,7 +201,7 @@ h1.hero:after {
   content: "";
   width: 50px;
   position: relative;
-  border-bottom: 1px solid #FFFF99; 
+  border-bottom: 1px solid #eee;
   display: block;
   text-align: center;
   margin: auto;
