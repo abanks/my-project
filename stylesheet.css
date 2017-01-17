@@ -22,7 +22,7 @@ body {
   position: relative;
   width: 1170px;
   margin: 0 auto;
-  color: #444;
+  color: black; /* words and bracket colors */
   font-size: 14px;
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
@@ -34,7 +34,7 @@ body {
 }
 
 .section.bg {
-  background: #f7f7f7;
+  background: #f7f7f7; /* light grey background color */ 
 }
 /*
   Header
@@ -68,7 +68,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: red;
+  background: red; /*red block in the left corner */
   float: left;
   height: 40px;
   width: 170px;
@@ -93,7 +93,7 @@ ul.nav li a {
 }
 
 ul.nav li:hover a {
-  color: red;
+  color: red; /*hover color for the sticky links */
 }
 
 ul.nav li a {
@@ -107,7 +107,7 @@ ul.nav li a {
 
 .section .slider,
 .section .footer {
-  background: #333;
+  background: #333; /*top and botton dark grey sections */
 }
 
 .slidercontent {
@@ -116,7 +116,7 @@ ul.nav li a {
 
 .hero {
   font-family: 'Roboto Slab', sans-serif;
-  color: white;
+  color: white; /*words in the first dark grey section */
   font-weight: normal;
   letter-spacing: 1px;
 }
@@ -141,7 +141,7 @@ h1.hero:after {
 }
 
 .call {
-  color: white;
+  color: white; /* color of the wow inside of the box in the dark grey section at the top */
   display: block;
   margin-bottom: 20px;
 }
@@ -273,7 +273,7 @@ h1.hero:after {
 }
 
 .col.bg {
-  background: #FFF;
+  background: #FFF; /*colors behind some of the descriptions */
 }
 
 .col.pointer {
