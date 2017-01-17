@@ -22,7 +22,7 @@ body {
   position: relative;
   width: 1170px;
   margin: 0 auto;
-  color: #444;
+  color: #444; /* Dark grey sections */
   font-size: 14px;
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
@@ -34,7 +34,7 @@ body {
 }
 
 .section.bg {
-  background: #f7f7f7;
+  background: #f7f7f7; /* light grey sections */
 }
 /*
   Header
@@ -68,7 +68,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: red;
+  background: #FFFF99; 
   float: left;
   height: 40px;
   width: 170px;
@@ -93,7 +93,7 @@ ul.nav li a {
 }
 
 ul.nav li:hover a {
-  color: #ffd77e;
+  color: red; /* hover color of projects, Da Vinci Communications etc. */
 }
 
 ul.nav li a {
@@ -107,7 +107,7 @@ ul.nav li a {
 
 .section .slider,
 .section .footer {
-  background: #333;
+  background: #333; /* any dark grey section */
 }
 
 .slidercontent {
