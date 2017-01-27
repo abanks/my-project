@@ -154,6 +154,9 @@ h1.hero:after {
   transition: background 0.15s linear;
 }
 
+/* This code pertains to how the immage blurrs over when you place your cursor over it
+The code pretty much just says when you hover over it changes to the color background: rgba(255, 255, 255, 0.1)
+and this code also says that the cursor is going to be a pointer. */
 .call span:hover {
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
