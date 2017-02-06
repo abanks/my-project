@@ -242,7 +242,7 @@ and this code also says that the cursor is going to be a pointer. */
 }
 
 .col:hover > .icon {
-  background: #F44336;
+  background: #3C1218;
   color: white;
 }
 
