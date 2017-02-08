@@ -280,7 +280,7 @@ and this code also says that the cursor is going to be a pointer. */
 }
 
 .col.pointer {
-  cursor: pointer;
+  cursor: grabbing;
 }
 
 .col.bg:hover .imgholder {
